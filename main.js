@@ -14,7 +14,7 @@ function setUserName()
 let myHeading = document.querySelector('h1'); // myHeading prend la fonction querySelector
 
 let variable;
-variable = [1, 'Dancing Dukcy on fire, prêt à ravager le game', 3];
+variable = [1, 'Dancing Ducky, prêt à ravager le game', 3];
 myHeading.textContent = variable[1]; // affiche le txt contenu dans variable[1] avec myHeading
 
 let calcul = addition(1, 2);
