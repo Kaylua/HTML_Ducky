@@ -17,7 +17,27 @@ if(calcul === 3)
 	//alert("POULEEEET"); // affiche une popup avc la fonction alert
 }
 
-document.querySelector('img').addEventListener('click', function() 
+
+document.querySelector('h1').addEventListener('click', function()
 {
     alert('Fais plus jamais ça batard');
+});
+
+
+/* 
+document.querySelector('img').addEventListener('click', function()
+est la meme chose que :
+let myHTML = document.querySelector('html');
+myHTML.addEventListener('click', function() {});
+*/
+
+let myImage = document.querySelector('img');
+
+myImage.addEventListener('click', function() {
+    let mySrc = myImage.getAttribute('src');
+    if (mySrc === 'images/ducky2.gif') {
+      myImage.setAttribute('src', 'images/ducky.gif');
+    } else {
+      myImage.setAttribute('src', 'images/ducky2.gif');
+    }
 });
