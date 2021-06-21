@@ -27,7 +27,7 @@ if(calcul === 3)
 
 document.querySelector('h1').addEventListener('click', function()
 {
-    alert('Fais plus jamais ça batard');
+    alert('Fais plus jamais ça');
 });
 
 
