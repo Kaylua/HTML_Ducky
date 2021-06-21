@@ -8,20 +8,20 @@ function setUserName()
 {
   let myName = prompt('Veuillez saisir votre nom.');
   localStorage.setItem('nom', myName);
-  mySoustitre.textContent = 'Je vais te démarrer ' + myName;
+  mySoustitre.textContent = 'Salut ' + myName;
 }
 
 let myHeading = document.querySelector('h1'); // myHeading prend la fonction querySelector
 
 let variable;
-variable = [1, 'Dancing Ducky, prêt à ravager le game', 3];
+variable = [1, 'Canard, prêt à ravager le game', 3];
 myHeading.textContent = variable[1]; // affiche le txt contenu dans variable[1] avec myHeading
 
 let calcul = addition(1, 2);
 
 if(calcul === 3)
 {
-	//alert("POULEEEET"); // affiche une popup avc la fonction alert
+	//alert("alo"); // affiche une popup avc la fonction alert
 }
 
 
@@ -60,7 +60,7 @@ if (!localStorage.getItem('nom'))
 else 
 {
   let storedName = localStorage.getItem('nom');
-  mySoustitre.textContent = 'Je vais te démarrer ' + storedName;
+  mySoustitre.textContent = 'Yo ' + storedName;
 }
 
 myButton.addEventListener('click', function() {
