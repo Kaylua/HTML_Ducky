@@ -7,35 +7,29 @@ html /*concerne tous les textes */
 {
 	font-size: 30px; /* px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
 	font-family: 'Roboto', sans-serif;
-	background-color: #FF9500;
+	background-color: #df7a3c;
+	
 }
 
 .gauche
 {
-
-	width: 300px;
-	background-color: yellow;
-	padding: 0 20px 20px 20px;
+	background-image: url("../images/duckwp.png");
 	border: 5px solid black;
-	display: block;
+	
 }
 
 .main 
 {
-  width: 900px;
-  /*
-  margin: 0 auto;*/
-  background-color: yellow;
+  width: 1000px;
+  background-color: #87240a;/*a62a09*/
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
 
 .droite
 {
-
-	width: 300px;
-	background-color: yellow;
-	padding: 0 20px 20px 20px;
+	background-image: url("../images/duckwp.png");
+	background-position-x: right;
 	border: 5px solid black;
 	display: block;
 }
@@ -45,22 +39,23 @@ body
 	display: grid;
 	column-gap: 2rem;
 	grid-template-columns: repeat(3, 1fr);
+
 }
 
 #titre_principal
 {
 	text-align: center;
-	color:red;
+	color:#e98d06;
 	
 	margin: 0; /* sert a enelever l'espace moche entre le titre et le bord */
 	padding: 20px 0;
-	text-shadow: 3px 3px 1px black; /* shadow custom dans cet ordre : decalage horizontal, vertical, et rayon de flou (flou de l'ombre), et la couleur de l'ombre */
+	text-shadow: 6px 3px 1px black; /* shadow custom dans cet ordre : decalage horizontal, vertical, et rayon de flou (flou de l'ombre), et la couleur de l'ombre */
 }
 
 #sous_titre
 {
 	text-align: center;
-	color:orange;
+	color:#e98d06;/*ffbd59*/
 	text-shadow: 2px 2px 1px black;
 }
 
@@ -92,6 +87,15 @@ button
 
 p, li, p1
 {
+	color:white;
+	font-size: 20px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+p2
+{
+	color:black;
 	font-size: 20px;
 	line-height: 2;
 	letter-spacing: 1px;
@@ -111,5 +115,5 @@ video
 
 a:hover /*pour quand l'utilisateur passe sa souris sur un lien*/
 {
-  color:blue;
+  color:yellow;
 }
