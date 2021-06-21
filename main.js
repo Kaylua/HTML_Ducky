@@ -4,6 +4,13 @@ function addition(nbr1, nbr2) // fonction addition
 	return resultat;
 }
 
+function setUserName() 
+{
+  let myName = prompt('Veuillez saisir votre nom.');
+  localStorage.setItem('nom', myName);
+  mySoustitre.textContent = 'Je vais te démarrer ' + myName;
+}
+
 let myHeading = document.querySelector('h1'); // myHeading prend la fonction querySelector
 
 let variable;
@@ -31,7 +38,7 @@ let myHTML = document.querySelector('html');
 myHTML.addEventListener('click', function() {});
 */
 
-let myImage = document.querySelector('img');
+let myImage = document.querySelector('img'); // tout ça sert à switch d'image qd on clickd sur le canard
 
 myImage.addEventListener('click', function() {
     let mySrc = myImage.getAttribute('src');
@@ -40,4 +47,22 @@ myImage.addEventListener('click', function() {
     } else {
       myImage.setAttribute('src', 'images/ducky2.gif');
     }
+});
+
+
+let myButton = document.querySelector('button');
+let mySoustitre = document.querySelector('h2');
+
+if (!localStorage.getItem('nom')) 
+{
+  setUserName();
+} 
+else 
+{
+  let storedName = localStorage.getItem('nom');
+  mySoustitre.textContent = 'Je vais te démarrer ' + storedName;
+}
+
+myButton.addEventListener('click', function() {
+  setUserName();
 });
